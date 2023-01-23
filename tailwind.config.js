@@ -1,0 +1,52 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: {
+      sm: { min: "200px", max: "550px" },
+      md: { min: "551px", max: "1050px" },
+    },
+    extend: {
+      colors: {
+        gray_600: "#828282",
+        cyan_A400: "#00f2ea",
+        white_A700_b2: "#ffffffb2",
+        gray_500_4c: "#9d9d9d4c",
+        blue_500: "#1da1f2",
+        black_900_3f: "#0000003f",
+        gray_300: "#e0e0e0",
+        bluegray_900: "#2f2f2f",
+        indigo_300: "#8988b6",
+        white_A700_33: "#ffffff33",
+        black_900_33: "#00000033",
+        black_900: "#000000",
+        pink_A400: "#ff004f",
+        black_901: "#000100",
+        bluegray_100_6b: "#d9d9d96b",
+        white_A700_05: "#ffffff05",
+        white_A700: "#ffffff",
+        light_blue_100_60: "#abeffd60",
+      },
+      borderRadius: {
+        radius1: "1px",
+        radius4: "4px",
+        radius5: "5px",
+        radius15: "15px",
+        radius42: "42px",
+        radius50: "50%",
+      },
+      fontFamily: {
+        roboto: "Roboto",
+        inter: "Inter",
+        ubuntu: "Ubuntu",
+        montserrat: "Montserrat",
+      },
+      boxShadow: { bs: "0px 4px  4px 0px #0000003f" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
